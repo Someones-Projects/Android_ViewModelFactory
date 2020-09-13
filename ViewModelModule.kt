@@ -1,6 +1,6 @@
 package com.onecosys.android.bitcoinnews.di.factory
 
-import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.onecosys.android.bitcoinnews.viewmodel.ArticleViewModel
 import dagger.Binds
@@ -17,6 +17,6 @@ abstract class ViewModelModule {
     @Binds
     @IntoMap
     @ViewModelKey(ArticleViewModel::class)
-    internal abstract fun bindViewModel(viewModel: ArticleViewModel): AndroidViewModel
+    internal abstract fun bindViewModel(viewModel: ArticleViewModel): ViewModel
 
 }
