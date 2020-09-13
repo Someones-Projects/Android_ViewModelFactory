@@ -1,6 +1,6 @@
 package com.onecosys.android.bitcoinnews.di.factory
 
-import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.ViewModel
 import dagger.MapKey
 import kotlin.reflect.KClass
 
@@ -11,4 +11,4 @@ import kotlin.reflect.KClass
 )
 @Retention(AnnotationRetention.RUNTIME)
 @MapKey
-annotation class ViewModelKey(val value: KClass<out AndroidViewModel>)
+annotation class ViewModelKey(val value: KClass<out ViewModel>)
